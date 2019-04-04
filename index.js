@@ -1,6 +1,5 @@
 const { generateTSFiles } = require("swagger-ts-generator");
 const getSwaggerObject = require("./functions/get-swagger-object");
-// const collapseContracts = require("./functions/collapse-contract-files");
 
 // Ingore SSL certificate errors
 process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0;
@@ -27,6 +26,13 @@ async function generateContracts(swaggerFilePath, contractsDirectory, options = 
             const representEnumsAsNumbers = require("./functions/represent-enums-as-numbers");
             representEnumsAsNumbers(enumsFilePath).then(() => {
                 console.log("Change enums representation from string to number operation was successful!");
+
+                if (options && options.collapseContractFiles) {
+                    const collapseContractFiles = require("./functions/collapse-contract-files");
+                    collapseContractFiles(contractsDirectory).then( () => {
+                        console.log("Contract files are collapsed to contracts.ts file!");
+                    });
+                }
             });
         }
     } catch (error) {
