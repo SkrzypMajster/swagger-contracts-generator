@@ -1,5 +1,5 @@
 # Swagger Contracts Generator
 
-[![Build Status](https://travis-ci.org/SkrzypMajster/swagger-contracts-generator.svg?branch=master)](https://travis-ci.org/SkrzypMajster/swagger-contracts-generator)
+[![Build Status](https://travis-ci.org/SkrzypMajster/swagger-contracts-generator.svg?branch=develop)](https://travis-ci.org/SkrzypMajster/swagger-contracts-generator)
 
-[![Coverage Status](https://coveralls.io/repos/github/SkrzypMajster/swagger-contracts-generator/badge.svg?branch=master)](https://coveralls.io/github/SkrzypMajster/swagger-contracts-generator?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/SkrzypMajster/swagger-contracts-generator/badge.svg?branch=develop)](https://coveralls.io/github/SkrzypMajster/swagger-contracts-generator?branch=develop)
